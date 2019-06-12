@@ -1,0 +1,13 @@
+.tile {
+    width: 100px;
+    height: 100px;
+}
+.tile:hover {
+    background-color: green;
+}
+.tile a {
+    text-underline: none;
+}
+.live {
+    background-color: green !important;
+}
