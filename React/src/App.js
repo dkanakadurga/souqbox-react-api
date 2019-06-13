@@ -1,58 +1,28 @@
 import React from 'react';
-import './App.css';
 import Orders from './Orders';
 import Home from './Home';
-import FlexDemo from './FlexDemo';
+import { Route } from 'react-router-dom';
+import TradedGoods from './TradedGoods';
+import RawMaterial from './RawMaterial';
+import SundryItems from './SundryItems';
+import LogisticsManager from './LogisticsManager';
+import StockCheck from './StockCheck';
+
 
 function App() {
   return (
-    <div className="App">
-     {/* <Orders/> */}
-      <Home/>
-     {/* <FlexDemo/> */}
-    </div>
+    <div>
+     <Route path = "/" exact component = {Home}/>
+     <Route path = "/TradedGoods" component = {TradedGoods}/>
+     <Route path = "/RawMaterial" component = {RawMaterial}/>
+     <Route path = "/SundryItems" component = {SundryItems}/>
+     <Route path = "/LogisticsManager" component = {LogisticsManager}/>
+     <Route path = "/StockCheck" component = {StockCheck}/>
+     </div>
   );
 }
 
 export default App;
-
-// import React, {Component} from 'react';
-// import { createSwitchNavigator } from "@react-navigation/core";
-// import { createBrowserApp, Link } from "@react-navigation/web";
-// import { start } from "repl";
-
-// class Home extends React.Component {
-//   static path = "";
-//   static navigationOptions = {
-//     title: "Home",
-//   };
-//   render () {
-//     return (
-//       <div>
-//         <h2>Home Screen</h2>
-//         <Link toRoute="Profile" params={{ name: "Brent", view: "photos" }}>
-//           Brent's photos
-//         </Link>
-//       </div>
-//     );
-//   }
-// }
-// class Profile extends React.Component {
-//   static path = "/profile/:name";
-
-// }
-
-// const AppNavigator = createSwitchNavigator({
-//   Home,
-//   Profile,
-// });
-
-// const App = createBrowserApp(AppNavigator);
-
-// export default App;
-
-
-
 
 
 

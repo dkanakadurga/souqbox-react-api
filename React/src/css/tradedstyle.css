@@ -1,0 +1,43 @@
+.orderHeading {
+    position: absolute;
+    top:41%;
+    float: left;
+    
+
+}
+.ordersClass {
+    position: absolute;
+    top: 45%;
+    float: left; 
+    width: 48%;
+    border: 2px solid whitesmoke;
+    border-radius: 5%;
+    text-align: center;
+    
+}
+
+.messageHeading{
+    position: absolute;
+    top:41%;
+    left: 52%;
+
+}
+
+.messagesClass {
+    position: absolute;
+    top:45%;
+    left: 52%;
+    width:48%;
+    padding:5px;
+    /* border: 2px solid rgb(192, 181, 181); */
+    border: 2px solid whitesmoke;
+    border-radius: 7%;
+}
+
+.headerClass{
+    position: relative;
+    height:50%;
+}
+
+
+

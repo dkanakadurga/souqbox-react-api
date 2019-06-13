@@ -3,6 +3,7 @@ import axios from 'axios';
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 import Table from 'react-bootstrap/Table';
+import './css/orderStyle.css';
 
 
 
@@ -45,18 +46,13 @@ componentDidMount() {
 }
 
 render() {
-    // if(this.state.order[0])
-    //     {
-    //           var date1 - new Date(this.state.order[0].Ordered);
-    //     }
+   
     
 
     let table1 = (
-   
-        <Table className = "ordTable">
-       
-       
-               <thead>
+    //   <div className = "ordTable">
+           <Table className = "ordTable" >
+             <thead>
                 <tr>
                     <th>Product name</th>
                     <th>Ordered</th>
@@ -82,6 +78,8 @@ render() {
             
             )}
         </Table>
+        
+
           
      );
 

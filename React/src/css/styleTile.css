@@ -1,3 +1,12 @@
 .anchor {
     text-decoration: none;
 }
+
+   
+.tileclass{
+position: relative;    
+width: 700px;
+text-align: center;
+left: 10px;
+}
+

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Header from './Header';
 
 
-class Home extends React.Component {
+class StockCheck extends React.Component {
     constructor(props) {
         super(props)
     }
@@ -15,4 +15,4 @@ render() {
 
 }
 
-export default Home;
+export default StockCheck;
