@@ -10,12 +10,17 @@
     top: 45%;
     float: left; 
     width: 48%;
-    border: 2px solid whitesmoke;
+    max-width: 800px;;
+    border: 2px solid rgb(117, 114, 114);
     border-radius: 5%;
     text-align: center;
+    overflow: scroll;
+    
     
 }
-
+.container {
+    background-color: grey;
+}
 .messageHeading{
     position: absolute;
     top:41%;
@@ -30,7 +35,7 @@
     width:48%;
     padding:5px;
     /* border: 2px solid rgb(192, 181, 181); */
-    border: 2px solid whitesmoke;
+    border: 2px solid  rgb(117, 114, 114);
     border-radius: 7%;
 }
 

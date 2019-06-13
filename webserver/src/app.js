@@ -30,19 +30,19 @@ app.get('/messages', (req, res) => {
         senderName: "Den Dellon",
         subject: "Need to remember to place the order",
         gender: "male",
-        isOpen : "unread"
+        isOpen : false
         },
         {
             senderName: "Paige Turner",
             subject: "Discount offer on recent purchase",
             gender: "female",
-            isOpen : "read"
+            isOpen : true
         },
         {
             senderName: "Will Power",
             subject: "Need to remember to place the order",
             gender: "male",
-            isOpen : "read"
+            isOpen : true
         },
 
 

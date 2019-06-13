@@ -43,9 +43,12 @@ render() {
             {this.state.msg.map((rec, key) => 
             
                 <div>
-
-                    <span>{rec.isOpen}</span>
-                    <span>{rec.gender}</span>
+                    <div className = "mailchk">
+                    <div className = {rec.isOpen ? "readMessage" : "unreadMessage"}> </div>
+                    </div>
+                    <div className = "genderchk">
+                   </div>
+                    <div className = {rec.gender == "male" ? "male" : "female" }></div>
                     <span>{rec.senderName}</span>
                     <div>{rec.subject}</div>
                  </div>

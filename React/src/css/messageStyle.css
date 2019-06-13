@@ -1,3 +1,37 @@
 .msgclass {
     width: 100%;
 }
+
+.readMessage {
+background-image: url('../Images/readImg.png');
+width: 21px;
+height: 18px;
+}
+
+.unreadMessage {
+background-image: url('../Images/unreadImg.png');
+width: 21px;
+height: 18px;
+}
+
+.male {
+background-image: url('../Images/maleImg.png');
+width: 25px;
+height: 34px;
+}
+
+.female {
+background-image: url('../Images/femaleImg.png');
+width: 25px;
+height: 34px;
+}
+
+.mailchk {
+
+
+}
+
+.genderchk {
+
+
+}

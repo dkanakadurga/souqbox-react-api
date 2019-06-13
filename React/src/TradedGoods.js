@@ -13,7 +13,7 @@ class TradedGoods extends React.Component {
 
 render() {
     return(
-        <div>
+        <div class="container">
        <div>
         <div className = "headerClass"><Header/> </div>    
        </div> 

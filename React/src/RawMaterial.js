@@ -9,7 +9,9 @@ class RawMaterial extends React.Component {
 
 render() {
     return(
+        <div class = "container">
      <Header/>
+     </div>
     );
 }
 
