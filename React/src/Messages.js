@@ -9,6 +9,7 @@ class Messages extends React.Component {
     constructor(props) {
         super(props) 
         this.state = {
+            count: '',
             msg:[]
         }
 
@@ -17,11 +18,8 @@ class Messages extends React.Component {
     componentDidMount() {
         axios.get("http://localhost:3000/messages")
         .then(response => {
-            console.log(response.data);
-            
-            let msg = response.data.map(obj => (
-
-
+            let count = response.data.unreadCount;
+            let msg = response.data.msgArray.map(obj => (
                 {
                     senderName: obj.senderName,
                     subject: obj.subject,
@@ -29,7 +27,7 @@ class Messages extends React.Component {
                     isOpen: obj.isOpen
                 }
             ))
-            this.setState({msg});
+            this.setState({msg, count});
         }).catch(err => {
             console.log(err);
         })
@@ -39,18 +37,23 @@ render() {
     let msgbox = (
         
         <div className = "msgclass">
+            <div className = "unreadCount">{this.state.count} new messages</div>
             
             {this.state.msg.map((rec, key) => 
-            
-                <div>
+             <div className = "msgcontainer">
+                 
                     <div className = "mailchk">
                     <div className = {rec.isOpen ? "readMessage" : "unreadMessage"}> </div>
                     </div>
                     <div className = "genderchk">
-                   </div>
                     <div className = {rec.gender == "male" ? "male" : "female" }></div>
-                    <span>{rec.senderName}</span>
-                    <div>{rec.subject}</div>
+                    </div>
+                    <div className = "senderClass">
+                    <div>{rec.senderName}</div>
+                    </div>
+                     <div className = "subjectClass"> 
+                     <div><a href="#">{rec.subject}</a> </div> 
+                     </div>
                  </div>
             
         )}

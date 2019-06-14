@@ -1,5 +1,7 @@
 .msgclass {
     width: 100%;
+    height:100%;
+    text-align: center;
 }
 
 .readMessage {
@@ -27,11 +29,41 @@ height: 34px;
 }
 
 .mailchk {
-
+    position: absolute;
+    top: 2px;
 
 }
 
 .genderchk {
+    position: absolute;
+    left: 30px;
+}
 
+.senderClass {
+    position: absolute;
+    left: 70px;
+}
 
+.subjectClass {
+    position: absolute;
+    top:20px;
+    left:70px;
+    
+    
+}
+
+.unreadCount {
+    border: 1px solid rgb(172, 172, 185);
+    border-radius: 20px;
+    background-color: rgb(172, 172, 185);
+    
+    
+}
+    
+
+.msgcontainer {
+    position:relative;
+    width: 100%;
+    height: 30%;
+    
 }

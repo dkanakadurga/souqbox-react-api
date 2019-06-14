@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import tradeLogo from './Images/tradeicon.png';
 import './css/styleTile.css'
 import Messages from './Messages';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -18,7 +19,7 @@ render( ) {
         <div className = "tileclass">
         <div className = {this.props.className}>
            
-            <a className = "anchor" href = {this.props.refName}>
+            <NavLink to = {this.props.refName} activeClassName = {this.props.activeClassName} strict>
             <div className="imgclass">
                 <br/>
            <img src = {this.props.imgIcon}></img>
@@ -27,7 +28,7 @@ render( ) {
            <div className="tiledes">
            <div>{this.props.tileName}</div>
            </div>
-           </a>
+           </NavLink>
         </div>
         </div>);
        

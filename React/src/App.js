@@ -1,12 +1,14 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Orders from './Orders';
 import Home from './Home';
-import { Route } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
 import TradedGoods from './TradedGoods';
 import RawMaterial from './RawMaterial';
 import SundryItems from './SundryItems';
 import LogisticsManager from './LogisticsManager';
 import StockCheck from './StockCheck';
+
+
 
 
 function App() {
@@ -22,7 +24,8 @@ function App() {
   );
 }
 
-export default App;
+
+export default withRouter(App);
 
 
 

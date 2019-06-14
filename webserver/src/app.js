@@ -25,7 +25,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get('/messages', (req, res) => {
-    res.send([
+    res.send(
+        {
+    unreadCount : 1,        
+    msgArray :    [
         {
         senderName: "Den Dellon",
         subject: "Need to remember to place the order",
@@ -44,9 +47,10 @@ app.get('/messages', (req, res) => {
             gender: "male",
             isOpen : true
         },
+]
+        }
 
-
-])
+)
 })
 
 

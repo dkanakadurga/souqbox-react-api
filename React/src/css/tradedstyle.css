@@ -1,6 +1,7 @@
 .orderHeading {
     position: absolute;
     top:41%;
+    left: 4%;
     float: left;
     
 
@@ -8,19 +9,19 @@
 .ordersClass {
     position: absolute;
     top: 45%;
-    float: left; 
-    width: 48%;
+    left: 4%;
+    width: 44%;
+    height: 42%;
     max-width: 800px;;
-    border: 2px solid rgb(117, 114, 114);
-    border-radius: 5%;
+    border: 2px solid rgb(199, 191, 191);
+    border-radius: 2%;
     text-align: center;
-    overflow: scroll;
+    overflow: auto; 
+    
     
     
 }
-.container {
-    background-color: grey;
-}
+
 .messageHeading{
     position: absolute;
     top:41%;
@@ -32,11 +33,12 @@
     position: absolute;
     top:45%;
     left: 52%;
-    width:48%;
+    width:44%;
+    height: 40%;
     padding:5px;
     /* border: 2px solid rgb(192, 181, 181); */
-    border: 2px solid  rgb(117, 114, 114);
-    border-radius: 7%;
+    border: 2px solid  rgb(212, 209, 209);
+    border-radius: 2%;
 }
 
 .headerClass{
