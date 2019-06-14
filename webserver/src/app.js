@@ -59,52 +59,52 @@ app.get('/messages', (req, res) => {
 app.get('/orders', (req, res) => {
     res.send([{ 
         ProductName: "product 1",
-        Ordered: new Date("23/06/19"),
+        Ordered: new Date("23/Jan/19"),
         Cost:"£29", 
         Status: "shipped",
         Delivered: "23, Kings Reach"
         },
          { 
-            ProductName: "product 1",
-            Ordered: new Date("23/06/19"),
-            Cost:"£29", 
+            ProductName: "product 2",
+            Ordered: new Date("13/Feb/19"),
+            Cost:"£31", 
             Status: "shipped",
-            Delivered: "23, Kings Reach"
+            Delivered: "25, Kings Reach"
          },
          { 
-            ProductName: "product 1",
-            Ordered: new Date("23/06/19"),
-            Cost:"£29", 
+            ProductName: "product 3",
+            Ordered: new Date("10/Apr/19"),
+            Cost:"£33", 
             Status: "shipped",
-            Delivered: "23, Kings Reach"
+            Delivered: "27, Kings Reach"
         },
         { 
-            ProductName: "product 1",
-            Ordered: new Date("23/06/19"),
-            Cost:"£29", 
-            Status: "shipped",
-            Delivered: "23, Kings Reach"
+            ProductName: "product 4",
+            Ordered: new Date("23/May/17"),
+            Cost:"£35", 
+            Status: "Notshipped",
+            Delivered: "29, Kings Reach"
          },
          { 
-            ProductName: "product 1",
-            Ordered: new Date("23/06/19"),
-            Cost:"£29", 
+            ProductName: "product 5",
+            Ordered: new Date("23/Aug/18"),
+            Cost:"£38", 
             Status: "shipped",
-            Delivered: "23, Kings Reach"
+            Delivered: "31, Kings Reach"
         },
         { 
-            ProductName: "product 1",
-            Ordered: new Date("23/06/19"),
-            Cost:"£29", 
-            Status: "shipped",
-            Delivered: "23, Kings Reach"
+            ProductName: "product 6",
+            Ordered: new Date("03/Jun/19"),
+            Cost:"£33", 
+            Status: "Notshipped",
+            Delivered: "33, Kings Reach"
          },
         { 
-            ProductName: "product 1",
-            Ordered: new Date("23/06/19"),
-            Cost:"£29", 
+            ProductName: "product 7",
+            Ordered: new Date("2/Jul/15"),
+            Cost:"£39", 
             Status: "shipped",
-            Delivered: "23, Kings Reach"
+            Delivered: "35, Kings Reach"
         },
         ]
         );
