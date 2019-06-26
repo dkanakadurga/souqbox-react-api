@@ -9,7 +9,7 @@ class StockCheck extends React.Component {
 
 render() {
     return(
-        <div class = "contaioner">
+        <div className = "container">
      <Header/>
      </div>
     );
